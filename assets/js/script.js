@@ -17,11 +17,11 @@ selections.forEach((selection) => {
 });
 
 function computerPlay() {
-    //this returns the options choice and uses the random method to choose the actual option.
+    //Function to return the options choice and uses the random method to choose the actual option.
     let choice = Math.floor(Math.random() * 4);
     return options[choice];
 };
-// this is the function that updates the player score.
+// A function that updates the player score.
 function updateScore(winner) {
     const playerScore = document.querySelector('#playerScore');
     const computerScore = document.querySelector('#computerScore');
@@ -58,17 +58,17 @@ function updateScore(winner) {
 // this is the function that actually plays the round and starts comparing the player choice against the computer choice.
 function playRound(playerSelection, computerSelection) {
   // Initialize selections
-  // in the player selection at index 0 make it upper case and then combine "" with the playerSelection letter at position 1 which you want to make lowercase.
+  // in the player selection at index 0 make it upper case and then combine "" with the playerSelection letter at position 1 to make it lowercase.
   playerSelection = playerSelection[0].toUpperCase().concat("", playerSelection.slice(1).toLowerCase())
 
-  // same with computer as above with the plaer.
+  // same with computer as above with the player.
   computerSelection = computerSelection[0].toUpperCase().concat("", computerSelection.slice(1).toLowerCase())
 
   // Process
-  // so at the starts you have to define the concepts of winner and tie and make them false as they have not occured yet.
+  // Defines the concepts of winner and tie and make them false as they have not occured yet.
   let winner = false;
   let tie = false;
-  // the switch statement allows you to compare the player selection/choice against all of the computer choices to to get an outcome of either winner or tie  as per https://www.w3schools.com/js/js_switch.asp
+  // the switch statement used to compare the player selection/choice against all of the computer choices to to get an outcome of either winner or tie  as per https://www.w3schools.com/js/js_switch.asp
 
   switch(playerSelection) {
       //if the player selection of rock is compared to the computer selection of rock the variable tie becomes true
@@ -130,7 +130,7 @@ function playRound(playerSelection, computerSelection) {
           }
           break;
   }
-  // we create the result variable.
+  //  Create the result variable.
   let result;
   // if the result is not a tie than go to the next if to see if the variable winner is true as that leads to the result you win where the player selection are rewritten to show what happened using template literals which allow you to refer to variables in a string https://www.geeksforgeeks.org/javascript-template-literals/
   if (!tie) {
@@ -152,7 +152,7 @@ function playRound(playerSelection, computerSelection) {
   const results = document.querySelector(".results");
   // this is to create a p element and append it to the document as per https://www.w3schools.com/jsref/met_document_createelement.asp
   const display = document.createElement('p');
-  // within the display create text based content and make it = to the result variable that you created above
+  // within the display create text based content and make it = to the result variable that was created above
   display.textContent = result;
   // add the results onto the display as a Child: https://www.w3schools.com/jsref/met_node_appendchild.asp
   results.appendChild(display);
