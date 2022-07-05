@@ -1,108 +1,101 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Fire, Grass, Water, David
+This site was made to create a simple and fun game to show how pure javascript works in a real-world scenario.
+It is a modification of the rock, paper, scissors game that uses fire, grass and water as the elements and also adds in David as the fourth element which beats everything else.  This game allows users to select between the 4 elements to play against the computer.
 
-Welcome Davidt001,
+![Responsice Mockup](media/love_maths_mockup.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+### Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+- __The Game Area__
 
-A blue button should appear to click: _Make Public_,
+  - This section will allow the user to play the  game. The user will be able to select one of four buttons to play against the computer. 
+   -Each button represents an element,  fire, grass, water and David. 
+   -The computer automatically generates a random response so it is a game of luck for the user.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+- __The Score Area__
 
-Another blue button should appear to click: _Open Browser_.
+  - This section will allow the user to see exactly how many times they have won vs how many times the computer won. The first to 5 wins.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+   __The Results Area__
+ - This section lets the play know who one each round and by what means.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Features Left to Implement
 
-------
+- Another feature idea I would like to implement is to add icons or images instead of the buttons to make the game more responsive and fun.
+-I would also like to make the game more responsive on mobile devices.
 
-## Release History
+## Testing 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+I tested this site out by clicking all of the buttons to make sure they worked.
+I made sure that each button represented the correct element and that the scores were being added up correctly.
+I made sure that the game was over after either the player or computer reach 5.
+I tested it out on multiple screen sizes to make sure the game was still playable on a variety of devices.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Validator Testing 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+      - There are 11 functions in this file.
+      - Function with the largest signature takes 2 arguments, while the median is 0.
+      - Largest function has 10 statements in it, while the median is 3.
+      - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Unfixed Bugs
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Deployment
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+ 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The live link can be found here - https://code-institute-org.github.io/love-maths/
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Credits 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+This site was my main inspiration for my project:
+https://github.com/farellukas/rock-paper-scissors/blob/main/script.js
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+I liked how simple they made everything so looked at each function and method on W3 schools they had used and then modifed the code to fit my own project.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+I originally started doing this project by following the tutorial below but ran into issues along the way with the javascipt not working so started all over as it was too complicated for me at this time:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+https://sebhastian.com/rock-paper-scissors-javascript/
 
-------
+I also used looked at this tutorial:
 
-## FAQ about the uptime script
+https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
-**Why have you added this script?**
+ I followed this page to compare the player selection/choice against all of the computer choices to to get an outcome of either winner or tie: https://www.w3schools.com/js/js_switch.asp 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+ I followed https://www.geeksforgeeks.org/javascript-template-literals/  to create template literals and refer variables in a string.
 
-**How will this affect me?**
+ I created a p element and append it to the document as per https://www.w3schools.com/jsref/met_document_createelement.asp
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ I followed https://www.w3schools.com/jsref/met_node_appendchild.asp to add the results to display as the child.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### Content 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- The text for the Home page was taken from Wikipedia Article A
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
