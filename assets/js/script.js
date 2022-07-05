@@ -4,11 +4,25 @@ let cScore = 0;
 
 choices.forEach((choice) => {
   choice.addEventListener("click", function () {
-    const player = this.value;
+    const player = this.textContent;
 
     const computerchoice = ["Fire", "Grass", "Water"];
     const computer = computerchoice[Math.floor(Math.random() * 3)];
 
+    updateMoves(player, computer);
+    compareInputs(player, computer);
+    updateScore();
+    if(checkWinner()){
+      pScore = cScore= 0;
+      updateScore();
+    }
+  });
+});
+
+function updateMoves(player, computer){
+  document.getElementById("p-move").src = `./assets/${player}.svg`;
+  document.getElementById("c-move").src = `./assets/${computer}.svg`;
+}
     function whowon(player, computer) {
         const thisgame = `${player} vs ${computer}`;
         if (player === computer) {
@@ -43,6 +57,4 @@ choices.forEach((choice) => {
           } else {
             alert(`${thisgame} = Computer Wins`);
             cScore++;
-          }
-        }
-      }
+          }}}

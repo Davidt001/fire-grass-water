@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
     <div class="container">
-        <h1>The Fire Grass Water Game</h1>
+        <h1>The Fire Grass Water David Game</h1>
         <h2>Beat the computer 5 rounds to win</h2>
-       
-        <button class="choices">Fire</button>
-        <button class="choices">Grass</button>
-        <button class="choices">Water</button>
 
+        <div class="scores">
+          <p id="playerScore">Player: 0</p>
+          <p id="computerScore">Computer: 0</p>
       </div>
+  
+      <div class="choices">
+          <button class="selection" data-choice="Grass">Grass</button>
+          <button class="selection" data-choice="Fire">Fire</button>
+          <button class="selection" data-choice="Water">Water</button>
+          <button class="selection" data-choice="David">David</button>
+      </div>
+      
+      <div class="results"></div>
+  </body>
     
 
     <script src="assets/js/script.js"></script>
