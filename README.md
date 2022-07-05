@@ -1,8 +1,8 @@
 # Fire, Grass, Water, David
 This site was made to create a simple and fun game to show how pure javascript works in a real-world scenario.
-It is a modification of the rock, paper, scissors game that uses fire, grass and water as the elements and also adds in David as the fourth element which beats everything else.  This game allows users to select between the 4 elements to play against the computer.
+It is a modification of the rock, paper, scissors game that uses fire, grass and water as the elements and also adds in David as the fourth element which beats everything else as a joke.  This game allows users to select between the 4 elements to play against the computer.
 
-![Responsice Mockup](media/love_maths_mockup.png)
+
 
 ## Features 
 
@@ -30,7 +30,7 @@ It is a modification of the rock, paper, scissors game that uses fire, grass and
 ### Features Left to Implement
 
 - Another feature idea I would like to implement is to add icons or images instead of the buttons to make the game more responsive and fun.
--I would also like to make the game more responsive on mobile devices.
+-I would also like to add some animations for each element while it is selected.
 
 ## Testing 
 
@@ -45,18 +45,15 @@ I tested it out on multiple screen sizes to make sure the game was still playabl
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
 - CSS
-    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 
-      - There are 11 functions in this file.
-      - Function with the largest signature takes 2 arguments, while the median is 0.
-      - Largest function has 10 statements in it, while the median is 3.
-      - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+      - There are 6 functions in this file.
+      -Function with the largest signature take 2 arguments, while the median is 0.5.
+      -Largest function has 34 statements in it, while the median is 2.
+      -The most complex function has a cyclomatic complexity value of 20 while the median is 1.5.
 
-### Unfixed Bugs
-
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
 ## Deployment
 
@@ -94,8 +91,4 @@ https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
 
 
-### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
