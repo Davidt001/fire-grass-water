@@ -63,8 +63,7 @@ I tested it out on multiple screen sizes to make sure the game was still playabl
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-maths/
-
+The live link can be found here - https://davidt001.github.io/fire-grass-water/
 
 ## Credits 
 
